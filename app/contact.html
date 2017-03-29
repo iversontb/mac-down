@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=1220">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
 
@@ -15,7 +15,7 @@
 <body>
 
 <!-- site -->
-<div class="site site_inner">
+<div class="site">
 
     <!-- site__header -->
     <header class="site__header">
@@ -24,9 +24,9 @@
         <div class="site__header-wrap">
 
             <!-- logo -->
-            <h1 class="logo">
+            <a href="#" class="logo">
                 <img src="img/logo.png" alt="Logo">
-            </h1>
+            </a>
             <!-- /logo -->
 
             <!-- menu -->
@@ -35,14 +35,9 @@
                 <!-- menu__wrap -->
                 <nav class="menu__wrap">
 
-                    <a class="menu__item" href="#">Fighting</a>
-                    <a class="menu__item" href="#">Car</a>
-                    <a class="menu__item" href="#">Puzzle</a>
-                    <a class="menu__item" href="#">Sports</a>
-                    <a class="menu__item" href="#">Action</a>
-                    <a class="menu__item" href="#">Adventure</a>
-                    <a class="menu__item" href="#">Girls</a>
-                    <a class="menu__item" href="#">Cooking</a>
+                    <a class="menu__item active" href="#">Home</a>
+                    <a class="menu__item" href="#">Mac News</a>
+                    <a class="menu__item" href="#">Software Categories</a>
 
                 </nav>
                 <!-- /menu__wrap -->
@@ -50,12 +45,28 @@
             </div>
             <!-- /menu -->
 
-            <!-- header-search -->
-            <form action="#" class="header-search">
-                <input class="header-search__input" type="search" placeholder="Search" />
-                <button type="submit" class="header-search__btn"></button>
-            </form>
-            <!-- header-search -->
+            <div>
+
+                <!-- site__header-icon -->
+                <span class="site__header-icon">
+                        <img src="img/apple-icon.png" alt="Icon">
+                    </span>
+                <!-- /site__header-icon -->
+
+                <!-- site__header-icon -->
+                <span class="site__header-icon">
+                        <img src="img/happy-mac-icon.png" alt="Icon">
+                    </span>
+                <!-- /site__header-icon -->
+
+                <!-- header-search -->
+                <form action="#" class="header-search">
+                    <input class="header-search__input" type="search" placeholder="Search" />
+                    <button type="submit" class="header-search__btn"></button>
+                </form>
+                <!-- header-search -->
+
+            </div>
 
         </div>
         <!-- /site__header-wrap -->
@@ -63,21 +74,23 @@
     </header>
     <!-- /site__header -->
 
+    <!-- bread-crumbs -->
+    <div class="bread-crumbs">
+        <a href="#" class="bread-crumbs__item">Home</a>
+        <span class="bread-crumbs__item">Contact Us</span>
+    </div>
+    <!-- /bread-crumbs -->
+
     <!-- site__content -->
     <div class="site__content">
 
         <!-- site__content-wrap -->
         <div class="site__content-wrap">
 
-            <!-- breadcrumps -->
-            <div class="breadcrumps">
-                <a href="/">Home</a>
-                <span>Contact Us</span>
-            </div>
-            <!-- /breadcrumps -->
-
             <!-- contact -->
             <div class="contact">
+
+                <h1>Contact Us</h1>
 
                 <!-- contact -->
                 <div class="contact__wrap">
@@ -89,27 +102,32 @@
                 <!-- contact__form -->
                 <form class="contact__form">
 
-                    <div class="fieldset">
-                        <input type="text" id="f-name" placeholder="First Name" required="">
-                    </div>
+                    <label class="fieldset">
+                        <span>First Name:</span>
+                        <input type="text" id="f-name" required="">
+                    </label>
 
-                    <div class="fieldset">
-                        <input type="text" id="l-name" placeholder="Last Name" required="">
-                    </div>
+                    <label class="fieldset">
+                        <span>Last Name:</span>
+                        <input type="text" id="l-name" required="">
+                    </label>
 
-                    <div class="fieldset">
-                        <input type="email" id="email" placeholder="Email Address" required="">
-                    </div>
+                    <label class="fieldset">
+                        <span>Email Address:</span>
+                        <input type="email" id="email" required="">
+                    </label>
 
-                    <div class="fieldset">
-                        <input type="text" id="subject" placeholder="Subject" required="">
-                    </div>
+                    <label class="fieldset">
+                        <span>Subject:</span>
+                        <input type="text" id="subject" required="">
+                    </label>
 
-                    <div class="fieldset fieldset_message">
-                        <textarea id="message" placeholder="Your Message"></textarea>
-                    </div>
+                    <label class="fieldset fieldset_message">
+                        <span>Your Message:</span>
+                        <textarea id="message"></textarea>
+                    </label>
 
-                    <button class="btn_submit" type="submit"><span>Send</span></button>
+                    <button class="btn_submit" type="submit"><span>SUBMIT</span></button>
 
 
                 </form>
@@ -118,173 +136,189 @@
             </div>
             <!-- /contact -->
 
-            <!-- site__title -->
-            <h2 class="site__title">More Popular Games</h2>
-            <!-- /site__title -->
+            <!-- software -->
+            <div class="software">
 
-            <!-- game -->
-            <div class="game">
+                <!-- inner__title -->
+                <h2 class="inner__title">More softwares that you might be interested in...</h2>
+                <!-- /inner__title -->
 
-                <!-- game__item -->
-                <a class="game__item" href="#">
+                <!-- software__item -->
+                <div class="software__item">
 
-                    <!-- game__pic -->
-                    <div class="game__pic">
-                        <img src="pic/game-pic01.jpg" alt="Picture">
-                        <div class="game__hover"><span>Play</span></div>
-                    </div>
-                    <!-- /game__pic -->
+                    <!-- software__pic -->
+                    <div class="software__pic" style="background-image: url(img/software-pic01.png)"></div>
+                    <!-- /software__pic -->
 
-                    <!-- game__name -->
-                    <div class="game__name">
-                        Game Name 1
-                    </div>
-                    <!-- /game__name -->
+                    <!-- software__name -->
+                    <div class="software__name">Name of Software</div>
+                    <!-- /software__name -->
 
-                </a>
-                <!-- /game__item -->
+                    <!-- btn -->
+                    <a class="btn" href="#">More Details</a>
+                    <!-- /btn -->
 
-                <!-- game__item -->
-                <a class="game__item" href="#">
+                </div>
+                <!-- /software__item -->
 
-                    <!-- game__pic -->
-                    <div class="game__pic">
-                        <img src="pic/game-pic01.jpg" alt="Picture">
-                        <div class="game__hover"><span>Play</span></div>
-                    </div>
-                    <!-- /game__pic -->
+                <!-- software__item -->
+                <div class="software__item">
 
-                    <!-- game__name -->
-                    <div class="game__name">
-                        Game Name 1
-                    </div>
-                    <!-- /game__name -->
+                    <!-- software__pic -->
+                    <div class="software__pic" style="background-image: url(img/software-pic01.png)"></div>
+                    <!-- /software__pic -->
 
-                </a>
-                <!-- /game__item -->
+                    <!-- software__name -->
+                    <div class="software__name">Name of Software</div>
+                    <!-- /software__name -->
 
-                <!-- game__item -->
-                <a class="game__item" href="#">
+                    <!-- btn -->
+                    <a class="btn" href="#">More Details</a>
+                    <!-- /btn -->
 
-                    <!-- game__pic -->
-                    <div class="game__pic">
-                        <img src="pic/game-pic01.jpg" alt="Picture">
-                        <div class="game__hover"><span>Play</span></div>
-                    </div>
-                    <!-- /game__pic -->
+                </div>
+                <!-- /software__item -->
 
-                    <!-- game__name -->
-                    <div class="game__name">
-                        Game Name 1
-                    </div>
-                    <!-- /game__name -->
+                <!-- software__item -->
+                <div class="software__item">
 
-                </a>
-                <!-- /game__item -->
+                    <!-- software__pic -->
+                    <div class="software__pic" style="background-image: url(img/software-pic01.png)"></div>
+                    <!-- /software__pic -->
 
-                <!-- game__item -->
-                <a class="game__item" href="#">
+                    <!-- software__name -->
+                    <div class="software__name">Name of Software</div>
+                    <!-- /software__name -->
 
-                    <!-- game__pic -->
-                    <div class="game__pic">
-                        <img src="pic/game-pic01.jpg" alt="Picture">
-                        <div class="game__hover"><span>Play</span></div>
-                    </div>
-                    <!-- /game__pic -->
+                    <!-- btn -->
+                    <a class="btn" href="#">More Details</a>
+                    <!-- /btn -->
 
-                    <!-- game__name -->
-                    <div class="game__name">
-                        Game Name 1
-                    </div>
-                    <!-- /game__name -->
+                </div>
+                <!-- /software__item -->
 
-                </a>
-                <!-- /game__item -->
+                <!-- software__item -->
+                <div class="software__item">
 
-                <!-- game__item -->
-                <a class="game__item" href="#">
+                    <!-- software__pic -->
+                    <div class="software__pic" style="background-image: url(img/software-pic01.png)"></div>
+                    <!-- /software__pic -->
 
-                    <!-- game__pic -->
-                    <div class="game__pic">
-                        <img src="pic/game-pic01.jpg" alt="Picture">
-                        <div class="game__hover"><span>Play</span></div>
-                    </div>
-                    <!-- /game__pic -->
+                    <!-- software__name -->
+                    <div class="software__name">Name of Software</div>
+                    <!-- /software__name -->
 
-                    <!-- game__name -->
-                    <div class="game__name">
-                        Game Name 1
-                    </div>
-                    <!-- /game__name -->
+                    <!-- btn -->
+                    <a class="btn" href="#">More Details</a>
+                    <!-- /btn -->
 
-                </a>
-                <!-- /game__item -->
+                </div>
+                <!-- /software__item -->
 
-                <!-- game__item -->
-                <a class="game__item" href="#">
+                <!-- software__item -->
+                <div class="software__item">
 
-                    <!-- game__pic -->
-                    <div class="game__pic">
-                        <img src="pic/game-pic01.jpg" alt="Picture">
-                        <div class="game__hover"><span>Play</span></div>
-                    </div>
-                    <!-- /game__pic -->
+                    <!-- software__pic -->
+                    <div class="software__pic" style="background-image: url(img/software-pic01.png)"></div>
+                    <!-- /software__pic -->
 
-                    <!-- game__name -->
-                    <div class="game__name">
-                        Game Name 1
-                    </div>
-                    <!-- /game__name -->
+                    <!-- software__name -->
+                    <div class="software__name">Name of Software</div>
+                    <!-- /software__name -->
 
-                </a>
-                <!-- /game__item -->
+                    <!-- btn -->
+                    <a class="btn" href="#">More Details</a>
+                    <!-- /btn -->
 
-                <!-- game__item -->
-                <a class="game__item" href="#">
+                </div>
+                <!-- /software__item -->
 
-                    <!-- game__pic -->
-                    <div class="game__pic">
-                        <img src="pic/game-pic01.jpg" alt="Picture">
-                        <div class="game__hover"><span>Play</span></div>
-                    </div>
-                    <!-- /game__pic -->
+                <!-- software__item -->
+                <div class="software__item">
 
-                    <!-- game__name -->
-                    <div class="game__name">
-                        Game Name 1
-                    </div>
-                    <!-- /game__name -->
+                    <!-- software__pic -->
+                    <div class="software__pic" style="background-image: url(img/software-pic01.png)"></div>
+                    <!-- /software__pic -->
 
-                </a>
-                <!-- /game__item -->
+                    <!-- software__name -->
+                    <div class="software__name">Name of Software</div>
+                    <!-- /software__name -->
 
-                <!-- game__item -->
-                <a class="game__item" href="#">
+                    <!-- btn -->
+                    <a class="btn" href="#">More Details</a>
+                    <!-- /btn -->
 
-                    <!-- game__pic -->
-                    <div class="game__pic">
-                        <img src="pic/game-pic01.jpg" alt="Picture">
-                        <div class="game__hover"><span>Play</span></div>
-                    </div>
-                    <!-- /game__pic -->
+                </div>
+                <!-- /software__item -->
 
-                    <!-- game__name -->
-                    <div class="game__name">
-                        Game Name 1
-                    </div>
-                    <!-- /game__name -->
+                <!-- software__item -->
+                <div class="software__item">
 
-                </a>
-                <!-- /game__item -->
+                    <!-- software__pic -->
+                    <div class="software__pic" style="background-image: url(img/software-pic01.png)"></div>
+                    <!-- /software__pic -->
+
+                    <!-- software__name -->
+                    <div class="software__name">Name of Software</div>
+                    <!-- /software__name -->
+
+                    <!-- btn -->
+                    <a class="btn" href="#">More Details</a>
+                    <!-- /btn -->
+
+                </div>
+                <!-- /software__item -->
+
+                <!-- software__item -->
+                <div class="software__item">
+
+                    <!-- software__pic -->
+                    <div class="software__pic" style="background-image: url(img/software-pic01.png)"></div>
+                    <!-- /software__pic -->
+
+                    <!-- software__name -->
+                    <div class="software__name">Name of Software</div>
+                    <!-- /software__name -->
+
+                    <!-- btn -->
+                    <a class="btn" href="#">More Details</a>
+                    <!-- /btn -->
+
+                </div>
+                <!-- /software__item -->
 
             </div>
-            <!-- /game -->
+            <!-- /software -->
 
         </div>
         <!-- /site__content-wrap -->
 
         <!-- site__aside -->
         <aside class="site__aside">
+
+            <!-- site__title -->
+            <h2 class="site__title">Mac Apps Categories</h2>
+            <!-- /site__title -->
+
+            <!-- categories -->
+            <div class="categories">
+
+                <!-- categories__wrap -->
+                <ul class="categories__wrap">
+
+                    <li class="categories__item"><a href="#">Utilities</a></li>
+                    <li class="categories__item"><a href="#">Internet Software</a></li>
+                    <li class="categories__item"><a href="#">Games</a></li>
+                    <li class="categories__item"><a href="#">Audio & Video</a></li>
+                    <li class="categories__item"><a href="#">Business Software</a></li>
+                    <li class="categories__item"><a href="#">Development</a></li>
+                    <li class="categories__item"><a href="#">Design & Photography</a></li>
+
+                </ul>
+                <!-- /categories__wrap -->
+
+            </div>
+            <!-- /categories -->
 
             <!-- show-small -->
             <a href="#" class="show-small" style="background-image: url(pic/baner-pic01.jpg)">
@@ -294,165 +328,172 @@
             </a>
             <!-- /show-small -->
 
-            <!-- site__title -->
-            <h2 class="site__title">Categories</h2>
-            <!-- /site__title -->
+            <!-- categories-tabs -->
+            <div class="categories-tabs">
 
-            <!-- categories -->
-            <div class="categories">
+                <!-- tabs -->
+                <div class="tabs">
 
-                <!-- categories__wrap -->
-                <ul class="categories__wrap">
+                    <dl>
 
-                    <li class="categories__item">
+                        <!-- tabs__title -->
+                        <dt class="tabs__title active">Top Downloads</dt>
+                        <!-- /tabs__title -->
 
-                        <!-- categories__pic -->
-                        <div class="categories__pic">
-                            <img src="img/categories01.png" alt="Icon">
-                        </div>
-                        <!-- /categories__pic -->
+                        <dd>
 
-                        <!-- categories__name -->
-                        <span class="categories__name">Fighting</span>
-                        <!-- /categories__name -->
+                            <!-- tabs__content -->
+                            <div class="tabs__content">
 
-                    </li>
+                                <!-- tabs__item -->
+                                <a href="#" class="tabs__item">
 
-                    <li class="categories__item">
+                                    <!-- tabs__icon -->
+                                    <div class="tabs__icon" style="background-image: url(img/tabs-icon01.png)"></div>
+                                    <!-- /tabs__icon -->
 
-                        <!-- categories__pic -->
-                        <div class="categories__pic">
-                            <img src="img/categories02.png" alt="Icon">
-                        </div>
-                        <!-- /categories__pic -->
+                                    <!-- tabs__description -->
+                                    <div class="tabs__description">
+                                        <h3>Lorem Ipsum 2.5.6</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <!-- /tabs__description -->
 
-                        <!-- categories__name -->
-                        <span class="categories__name">Cars</span>
-                        <!-- /categories__name -->
+                                </a>
+                                <!-- /tabs__item -->
 
-                    </li>
+                                <!-- tabs__item -->
+                                <a href="#" class="tabs__item">
 
-                    <li class="categories__item">
+                                    <!-- tabs__icon -->
+                                    <div class="tabs__icon" style="background-image: url(img/tabs-icon01.png)"></div>
+                                    <!-- /tabs__icon -->
 
-                        <!-- categories__pic -->
-                        <div class="categories__pic">
-                            <img src="img/categories03.png" alt="Icon">
-                        </div>
-                        <!-- /categories__pic -->
+                                    <!-- tabs__description -->
+                                    <div class="tabs__description">
+                                        <h3>Lorem Ipsum 2.5.6</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <!-- /tabs__description -->
 
-                        <!-- categories__name -->
-                        <span class="categories__name">Puzzle</span>
-                        <!-- /categories__name -->
+                                </a>
+                                <!-- /tabs__item -->
 
-                    </li>
+                                <!-- tabs__item -->
+                                <a href="#" class="tabs__item">
 
-                    <li class="categories__item">
+                                    <!-- tabs__icon -->
+                                    <div class="tabs__icon" style="background-image: url(img/tabs-icon01.png)"></div>
+                                    <!-- /tabs__icon -->
 
-                        <!-- categories__pic -->
-                        <div class="categories__pic">
-                            <img src="img/categories04.png" alt="Icon">
-                        </div>
-                        <!-- /categories__pic -->
+                                    <!-- tabs__description -->
+                                    <div class="tabs__description">
+                                        <h3>Lorem Ipsum 2.5.6</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <!-- /tabs__description -->
 
-                        <!-- categories__name -->
-                        <span class="categories__name">Sports</span>
-                        <!-- /categories__name -->
+                                </a>
+                                <!-- /tabs__item -->
 
-                    </li>
+                            </div>
+                            <!-- /tabs__content -->
 
-                    <li class="categories__item">
+                        </dd>
 
-                        <!-- categories__pic -->
-                        <div class="categories__pic">
-                            <img src="img/categories05.png" alt="Icon">
-                        </div>
-                        <!-- /categories__pic -->
+                        <!-- tabs__title -->
+                        <dt class="tabs__title">Most Popular Apps</dt>
+                        <!-- /tabs__title -->
 
-                        <!-- categories__name -->
-                        <span class="categories__name">Action</span>
-                        <!-- /categories__name -->
+                        <dd>
 
-                    </li>
+                            <!-- tabs__content -->
+                            <div class="tabs__content">
 
-                    <li class="categories__item">
+                                <!-- tabs__item -->
+                                <a href="#" class="tabs__item">
 
-                        <!-- categories__pic -->
-                        <div class="categories__pic">
-                            <img src="img/categories06.png" alt="Icon">
-                        </div>
-                        <!-- /categories__pic -->
+                                    <!-- tabs__icon -->
+                                    <div class="tabs__icon" style="background-image: url(img/tabs-icon01.png)"></div>
+                                    <!-- /tabs__icon -->
 
-                        <!-- categories__name -->
-                        <span class="categories__name">Adventure</span>
-                        <!-- /categories__name -->
+                                    <!-- tabs__description -->
+                                    <div class="tabs__description">
+                                        <h3>Lorem Ipsum 2.5.6</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <!-- /tabs__description -->
 
-                    </li>
+                                </a>
+                                <!-- /tabs__item -->
 
-                    <li class="categories__item">
+                                <!-- tabs__item -->
+                                <a href="#" class="tabs__item">
 
-                        <!-- categories__pic -->
-                        <div class="categories__pic">
-                            <img src="img/categories07.png" alt="Icon">
-                        </div>
-                        <!-- /categories__pic -->
+                                    <!-- tabs__icon -->
+                                    <div class="tabs__icon" style="background-image: url(img/tabs-icon01.png)"></div>
+                                    <!-- /tabs__icon -->
 
-                        <!-- categories__name -->
-                        <span class="categories__name">Dress Up</span>
-                        <!-- /categories__name -->
+                                    <!-- tabs__description -->
+                                    <div class="tabs__description">
+                                        <h3>Lorem Ipsum 2.5.6</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <!-- /tabs__description -->
 
-                    </li>
+                                </a>
+                                <!-- /tabs__item -->
 
-                    <li class="categories__item">
+                                <!-- tabs__item -->
+                                <a href="#" class="tabs__item">
 
-                        <!-- categories__pic -->
-                        <div class="categories__pic">
-                            <img src="img/categories08.png" alt="Icon">
-                        </div>
-                        <!-- /categories__pic -->
+                                    <!-- tabs__icon -->
+                                    <div class="tabs__icon" style="background-image: url(img/tabs-icon01.png)"></div>
+                                    <!-- /tabs__icon -->
 
-                        <!-- categories__name -->
-                        <span class="categories__name">Girls</span>
-                        <!-- /categories__name -->
+                                    <!-- tabs__description -->
+                                    <div class="tabs__description">
+                                        <h3>Lorem Ipsum 2.5.6</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <!-- /tabs__description -->
 
-                    </li>
+                                </a>
+                                <!-- /tabs__item -->
 
-                    <li class="categories__item">
+                                <!-- tabs__item -->
+                                <a href="#" class="tabs__item">
 
-                        <!-- categories__pic -->
-                        <div class="categories__pic">
-                            <img src="img/categories09.png" alt="Icon">
-                        </div>
-                        <!-- /categories__pic -->
+                                    <!-- tabs__icon -->
+                                    <div class="tabs__icon" style="background-image: url(img/tabs-icon01.png)"></div>
+                                    <!-- /tabs__icon -->
 
-                        <!-- categories__name -->
-                        <span class="categories__name">Shooting</span>
-                        <!-- /categories__name -->
+                                    <!-- tabs__description -->
+                                    <div class="tabs__description">
+                                        <h3>Lorem Ipsum 2.5.6</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <!-- /tabs__description -->
 
-                    </li>
+                                </a>
+                                <!-- /tabs__item -->
 
-                    <li class="categories__item">
+                            </div>
+                            <!-- /tabs__content -->
 
-                        <!-- categories__pic -->
-                        <div class="categories__pic">
-                            <img src="img/categories010.png" alt="Icon">
-                        </div>
-                        <!-- /categories__pic -->
+                        </dd>
 
-                        <!-- categories__name -->
-                        <span class="categories__name">Animal</span>
-                        <!-- /categories__name -->
+                    </dl>
 
-                    </li>
+                </div>
+                <!-- /tabs -->
 
-                </ul>
-                <!-- /categories__wrap -->
-
-                <!-- categories__more -->
-                <a class="categories__more" href="#"><span>More Categories</span></a>
-                <!-- /categories__more -->
+                <!-- categories-tabs__more -->
+                <a class="categories-tabs__more" href="#">More Popular Apps</a>
+                <!-- /categories-tabs__more -->
 
             </div>
-            <!-- /categories -->
+            <!-- /categories-tabs -->
 
         </aside>
         <!-- /site__aside -->
@@ -460,41 +501,46 @@
     </div>
     <!-- /site__content -->
 
+    <!-- game__download -->
+    <a class="game__download" href="#" style="background-image: url(pic/baner-pic03.jpg)">
+        <span></span>
+    </a>
+    <!-- /game__download -->
+
     <!-- site__footer -->
     <footer class="site__footer">
 
         <!-- site__footer-layout -->
         <div class="site__footer-layout">
 
-            <!-- secure -->
-            <div class="site__footer-secure">
-
-                <img src="img/secur.png" alt="Icon">
+            <!-- header__menu -->
+            <nav class="site__footer-menu">
 
                 <div>
-                    By clicking the button above and adding Moxie Maze New Tab, I accept and agree to abide by the End User License Agreement
+                    <a href="#">About Us</a>
+                    <a href="#">Help</a>
+                    <a href="#">Advertise</a>
+                </div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Uninstall</a>
                 </div>
 
+            </nav>
+            <!-- /header__menu -->
+
+            <!-- secure -->
+            <div class="site__footer-copyright">
+                © Copyright 2017 Company Name. All Rights Reserved.
             </div>
             <!-- /secure -->
 
-            <div>
-
-                <!-- logo -->
-                <h1 class="logo">
-                    <img src="img/footer-logo.png" alt="Logo">
-                </h1>
-                <!-- /logo -->
-
-                <!-- header__menu -->
-                <nav class="site__footer-menu">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Contact Us</a>
-                </nav>
-                <!-- /header__menu -->
-
-            </div>
+            <!-- logo -->
+            <a href="#" class="logo">
+                <img src="img/footer-logo.png" alt="Logo">
+            </a>
+            <!-- /logo -->
 
         </div>
         <!-- /site__footer-layout -->
@@ -504,6 +550,9 @@
 
 </div>
 <!-- /site -->
+
+<script src="js/vendors/jquery-2.2.1.min.js"></script>
+<script src="js/index.min.js"></script>
 
 </body>
 </html>
