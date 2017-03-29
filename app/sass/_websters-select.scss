@@ -1,0 +1,134 @@
+.websters-select {
+  @include main-font();
+  font-weight: 400;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+  width: 165px;
+  height: 32px;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+
+
+  &_opened {
+
+    .websters-select__arrow:after {
+      top: 11px;
+      transform: rotate(135deg);
+    }
+
+  }
+
+  &__arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    transform-origin: center;
+
+    &:after{
+      position: absolute;
+      top: 13px;
+      right: 13px;
+      width: 5px;
+      height: 5px;
+      border-top: 1px solid #333;
+      border-right: 1px solid #333;
+      transform: rotate(45deg);
+      content: '';
+      -webkit-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+    }
+  }
+
+  &__item {
+    overflow: hidden;
+    @include absoluteCenterY();
+    right: 20px;
+    left: 5px;
+    padding: 1px 10px 1px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &_mobile {
+
+    select {
+      position: absolute;
+      top: 0;
+      bottom: -1px;
+      left: 1px;
+      width: 100%;
+    }
+
+  }
+
+  &_custom {
+
+    select {
+      position: absolute;
+      left: -100000px;
+    }
+
+  }
+
+  &__popup {
+    @include main-font();
+
+    height: auto !important;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    box-sizing: border-box;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    background: #fff;
+
+    ul {
+      z-index: 1;
+    }
+
+    li {
+      white-space: nowrap;
+      overflow: hidden;
+      cursor: pointer;
+      font-size: 13px;
+      line-height: 32px;
+      padding: 0 0 0 15px;
+      color: #898989;
+      border-bottom: 1px solid #e2e2e2;
+
+      &:hover {
+        color: #0070c9;
+      }
+
+      &.active {
+        color: #0070c9 !important;
+      }
+
+      &:first-child.active {
+        display: none;
+      }
+
+    }
+
+  }
+
+}
+
+.sort-select{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#casino{
+  opacity: 0;
+}

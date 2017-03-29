@@ -1,0 +1,36 @@
+.categories{
+  margin-bottom: 40px;
+
+  &__wrap{
+    position: relative;
+    margin-bottom: -3px;
+  }
+
+  &__item{
+    position: relative;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 600;
+
+    &:after{
+      position: absolute;
+      top: 16px;
+      right: 1px;
+      width: 5px;
+      height: 5px;
+      border-top: 1px solid #333;
+      border-right: 1px solid #333;
+      transform: rotate(45deg);
+      content: "";
+    }
+
+    a{
+      color: #333333;
+      transition: color .3s ease;
+
+      &:hover{
+        color: #0070c9;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.contact{
+  position: relative;
+  margin-bottom: 37px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(35, 87, 124, 0.502);
+  color:#102940;
+
+  &__wrap{
+    margin-bottom: 35px;
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    max-width: 671px;
+
+    .fieldset{
+      width: 48%;
+    }
+
+    .fieldset_message{
+      width: 100%;
+    }
+
+    input,
+    textarea{
+      padding: 10px 13px;
+      margin-bottom: 25px;
+      border: 1px solid rgba(35,87,124,0.5);
+      background-color: #fff;
+      height: 35px;
+      width: 100%;
+      font-size: 13px;
+      color: #23577c;
+    }
+
+    label{
+      display: block;
+      margin-bottom: 4px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    textarea{
+      height: 133px;
+      margin-bottom: 18px;
+    }
+
+    button{
+      border:1px solid #008ff7;
+      background-color: #008ff7;
+      height: 46px;
+      padding: 0 38px 0 27px;
+      border-radius: 5px;
+      font-size: 20px;
+      line-height: 44px;
+      color: #fff;
+      transition: color .3s ease, background .3s ease, border .3s ease;
+
+      span{
+        position: relative;
+
+        &:after{
+          position: absolute;
+          top: 8px;
+          right: -12px;
+          width: 5px;
+          height: 5px;
+          border-top: 2px solid #fff;
+          border-right: 2px solid #fff;
+          transform: rotate(45deg);
+          content: "";
+          transition: border .3s ease;
+          backface-visibility: hidden;
+        }
+      }
+
+      &:hover{
+        background-color: transparent;
+        color: #008ff7;
+      }
+      &:hover span:after{
+        border-color: #008ff7;
+      }
+    }
+  }
+}

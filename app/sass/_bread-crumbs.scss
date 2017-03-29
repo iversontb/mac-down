@@ -1,0 +1,46 @@
+.bread-crumbs{
+  max-width: 1194px;
+  margin: 0 auto 34px;
+  padding-top: 14px;
+  font-size: 14px;
+  font-style: italic;
+
+  &__item{
+    position: relative;
+    padding-right: 13px;
+    color: #898989;
+
+    &:after{
+      content: '';
+      position: absolute;
+      top: 8px;
+      right: 4px;
+      width: 4px;
+      height: 4px;
+      border-top: 1px solid #898989;
+      border-right: 1px solid #898989;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    &:last-child{
+      font-weight: 700;
+      color: #333;
+
+      &:after{
+        display: none;
+      }
+
+      &:hover{
+        text-decoration: none;
+      }
+
+    }
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+  }
+
+}

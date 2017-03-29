@@ -1,0 +1,131 @@
+.promo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 923px;
+  padding-right: 3px;
+  margin: 24px auto;
+  font-weight: 600;
+
+  &__wrap{
+    display: inline-flex;
+  }
+
+  &__logo{
+    display: inline-flex;
+    margin-right: 19px;
+    font-size: 14px;
+    color: #898989;
+
+    span{
+      display: block;
+    }
+
+    img{
+      margin-right: 20px;
+    }
+  }
+
+  &__logo-title{
+    font-size: 32px;
+    color:#333;
+  }
+
+  &__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 269px;
+    height: 66px;
+    border-radius: 4px;
+    font-size: 22px;
+    color: #fff;
+
+    span{
+      position: relative;
+      z-index: 3;
+    }
+
+    &:before,
+    &:after{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      content:'';
+      transition: visibility .3s ease, opacity .3s ease;
+    }
+
+    &:before{
+      z-index: 1;
+      background-image: linear-gradient( 90deg, rgb(41,140,218) 0%, rgb(45,152,237) 100%);
+    }
+
+    &:after{
+      z-index: 2;
+      visibility: hidden;
+      opacity: 0;
+      background-image: linear-gradient( 90deg, rgb(45,152,237) 0%, rgb(41,140,218) 100%);
+    }
+
+    &:hover:after{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+.promo_inner{
+  flex-wrap: wrap;
+  margin-top: -3px;
+  line-height: 20px;
+
+  .promo__wrap{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .promo__btn-wrap{
+    text-align: center;
+
+    >span{
+      color:#898989;
+      font-size: 13px;
+    }
+  }
+  .promo__logo > div{
+    display: flex;
+    align-items: center;
+  }
+  .promo__logo-title{
+    position: relative;
+    padding-right: 10px;
+    margin-right: 10px;
+
+    &:before{
+      position: absolute;
+      top:4px;
+      right: 0;
+      width: 1px;
+      height: 25px;
+      background-color: #e2e2e2;
+      content: "";
+    }
+  }
+  .rate_big:before {
+    display: none;
+  }
+  .promo__description{
+    margin-bottom: 10px;
+
+    p{
+      font-size: 15px;
+      color: #898989;
+      font-weight: 400;
+    }
+
+  }
+}

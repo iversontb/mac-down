@@ -1,0 +1,30 @@
+.social{
+  position: relative;
+  padding: 25px 0 24px;
+  margin-bottom: 36px;
+  background-color: #1e3f88;
+  text-align: center;
+}
+.social .social__item{
+  display: inline-block;
+  vertical-align: middle;
+  width: 41px;
+  height: 43px;
+  margin: 0 10px;
+  background: url(../img/social-sprite.png) no-repeat center;
+  background-size: 170px 43px;
+  transition: opacity .3s ease;
+  -webkit-transition: opacity .3s ease;
+}
+.social a:hover{
+  opacity: .7;
+}
+.social .social-f{
+  background-position: 0 0;
+}
+.social .social-g{
+  background-position: -64px 0;
+}
+.social .social-tw{
+  background-position: -129px 0;
+}

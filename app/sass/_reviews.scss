@@ -1,0 +1,40 @@
+.reviews{
+  margin-top: 29px;
+
+  h3{
+    margin-bottom: 11px;
+  }
+
+  .rate_big {
+    padding-left: 0;
+
+    .rate__stars{
+      margin: 0;
+    }
+  }
+
+  &__wrap{
+    margin-bottom: 19px;
+    font-size: 15px;
+  }
+
+  &__wrap_ratings{
+    font-size: 16px;
+  }
+
+  &__item-wrap{
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 51%;
+  }
+
+ &__item{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 3px;
+   color: #898989;
+  }
+
+}

@@ -1,0 +1,84 @@
+.rate{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #898989;
+
+}
+.rate__stars{
+  position: relative;
+  width: 84px;
+  height: 15px;
+  margin-top: 4px;
+  margin-left: 5px;
+  background: url("../img/star01.png") repeat-x;
+  background-size: 17px auto;
+}
+.rate__stars > div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  background: url("../img/star02.png") repeat-x;
+  background-size: 17px auto;
+}
+.promo .rate_big{
+  &:before{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 1px;
+    height: 41px;
+    background-color: #e2e2e2;
+    content: "";
+  }
+}
+.rate_big{
+  position: relative;
+  padding-left: 33px;
+  padding-top: 3px;
+
+  .rate__stars{
+    width: 114px;
+    height: 22px;
+    margin-top: 0;
+    margin-left: 5px;
+    background-size: 23px auto;
+
+    > div{
+      top: 0;
+      left: 0;
+      height: 22px;
+      background-size: 23px auto;
+    }
+  }
+
+}
+
+.rate__new {
+
+  margin: 0 10px;
+
+  div{
+    float: left;
+    width: 25px;
+    height: 19px;
+    background: url("../img/star01.png");
+    background-size: contain;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    backface-visibility: hidden;
+  }
+}
+
+.rate__new div.active{
+  width: 25px;
+  height: 19px;
+  background: url("../img/star02.png");
+  background-size: contain;
+  backface-visibility: hidden;
+}

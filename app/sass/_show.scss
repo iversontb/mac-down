@@ -1,0 +1,54 @@
+
+.show-big{
+  display: block;
+  width: 100%;
+  margin-bottom: 23px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity .3s ease;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  span{
+    display: block;
+    padding-bottom: 200%;
+  }
+
+}
+.show-small{
+  display: block;
+  width: 100%;
+  margin-bottom: 51px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity .3s ease;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  span{
+    display: block;
+    padding-bottom: 82.633333%;
+  }
+}
+.game__download{
+  display: block;
+  width: 100%;
+  max-width: 728px;
+  margin: 0 auto 58px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity .3s ease;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  span{
+    display: block;
+    padding-bottom: 12.362637%;
+  }
+}
