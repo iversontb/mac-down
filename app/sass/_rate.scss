@@ -5,6 +5,33 @@
   line-height: 16px;
   color: #898989;
 
+  &__wrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  &__item{
+    width: 23px;
+    height: 19px;
+    background: url(../img/star01.png) no-repeat 0 0;
+    background-size: 24px auto;
+    cursor: pointer;
+
+    &_active{
+      background-image: url(../img/star02.png);
+    }
+
+    &_nonactive-temp{
+      background-image: url(../img/star01.png);
+    }
+
+    &_active-temp{
+      background-image: url(../img/star02.png);
+    }
+
+  }
+
 }
 .rate__stars{
   position: relative;

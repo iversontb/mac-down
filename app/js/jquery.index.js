@@ -4,8 +4,8 @@
 
     $( function(){
 
-        $.each( $('.rate__new'), function(){
-            new Rating( $(this) );
+        $.each( $( '.rate' ), function() {
+            new Rate ( $( this ) );
         } );
 
         $( '.tabs' ).each( function(){
@@ -19,32 +19,60 @@
 
     } );
 
-    var Rating = function (obj) {
+    var Rate = function( obj ) {
 
+        //private properties
         var _obj = obj,
-            _itemRate = _obj.find('div'),
-            _hiddenInput = _obj.find('input[type="hidden"]');
+            _wrap = _obj.find( '.rate__wrap'),
+            _item = _obj.find( '.rate__item'),
+            _itemActive = 'rate__item_active',
+            _itemTempActive = 'rate__item_active-temp',
+            _itemTempNonActive = 'rate__item_nonactive-temp';
 
-        var _addEvents = function () {
+        //private methods
+        var _initSlider = function() {
 
-                _itemRate.on({
-                    'click': function(){
-                        var curItem = $(this),
-                            dataRate = curItem.attr('data-rate'),
-                            prevElems = curItem.prevAll('div');
+                _item.on( {
+                    'mouseover': function() {
+                        var curNum =  $( this ).index();
 
-                        _itemRate.removeClass('active');
-                        prevElems.addClass('active');
-                        curItem.addClass('active');
-                        _hiddenInput.val(dataRate);
+                        _item.addClass( _itemTempNonActive );
+
+                        $( this ).addClass( _itemTempActive );
+
+                        for ( var i = 0; i < curNum; i++ ){
+                            _item.eq(i).addClass( _itemTempActive )
+                        }
+
+                    },
+                    'mouseout': function() {
+                        _item.removeClass( _itemTempActive );
+                        _item.removeClass( _itemTempNonActive )
+                    },
+                    'click': function() {
+                        _initActive( $( this ) )
                     }
-                });
+                } )
 
             },
-            _init = function () {
-                _addEvents();
+            _initActive = function( item ) {
+                var curNum =  item.index();
+
+                _item.removeClass( _itemActive );
+
+                item.addClass( _itemActive );
+
+                for ( var i = 0; i < curNum; i++ ){
+                    _item.eq(i).addClass( _itemActive )
+                }
+            },
+            _init = function() {
+                _initSlider();
             };
 
+        //public properties
+
+        //public methods
         _init();
     };
 
